@@ -4,6 +4,15 @@ import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   const projects = [
+     {
+      title: "Choice-game",
+      image: "/choice-game.PNG",
+      description:
+        "A lightweight browser game with branching choices and replayability—built to demo rapid prototyping and clean component design.",
+      live: "https://choice-game.vercel.app/",
+      github: "https://github.com/Saar-engflow/choice-game",
+    },
+    
     {
       title: "Coffee-shop website",
       image: "/Coffee-shop.PNG",
@@ -19,15 +28,8 @@ export default function Home() {
         "A minimalist, high-impact portfolio that showcases galleries beautifully, loads fast, and helps book more shoots with clear CTAs.",
       live: "https://photographer-portfolio-website-zeta.vercel.app/",
       github: "https://github.com/Saar-engflow/photographer-portfolio-website",
-    },
-    {
-      title: "Choice-game",
-      image: "/choice-game.PNG",
-      description:
-        "A lightweight browser game with branching choices and replayability—built to demo rapid prototyping and clean component design.",
-      live: "https://choice-game.vercel.app/",
-      github: "https://github.com/Saar-engflow/choice-game",
-    },
+    }
+   
   ];
 
   const skills: { name: string; level: number }[] = [
