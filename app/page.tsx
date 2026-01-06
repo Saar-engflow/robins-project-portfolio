@@ -12,7 +12,14 @@ export default function Home() {
       live: "https://choice-game.vercel.app/",
       github: "https://github.com/Saar-engflow/choice-game",
     },
-    
+     {
+      title: "Weather-app website",
+      image: "/weather-app.PNG",
+      description:
+        "weather app that provides users with real-time weather information for their location. It includes features such as current weather, hourly and daily forecasts, and weather alerts.",
+      live: "https://weather-app-puce-theta-80.vercel.app/",
+      github: "https://github.com/Saar-engflow/weather-app",
+    },
     {
       title: "Coffee-shop website",
       image: "/Coffee-shop.PNG",
