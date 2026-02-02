@@ -4,7 +4,7 @@ import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   const projects = [
-     {
+    {
       title: "Choice-game",
       image: "/choice-game.PNG",
       description:
@@ -12,7 +12,7 @@ export default function Home() {
       live: "https://choice-game.vercel.app/",
       github: "https://github.com/Saar-engflow/choice-game",
     },
-     {
+    {
       title: "Weather-app website",
       image: "/weather-app.PNG",
       description:
@@ -36,7 +36,7 @@ export default function Home() {
       live: "https://photographer-portfolio-website-zeta.vercel.app/",
       github: "https://github.com/Saar-engflow/photographer-portfolio-website",
     }
-   
+
   ];
 
   const skills: { name: string; level: number }[] = [
@@ -45,13 +45,13 @@ export default function Home() {
     { name: "JavaScript", level: 100 },
     { name: "Tailwind CSS", level: 80 },
     { name: "React", level: 80 },
-    { name: "Next.js", level: 50 },
-    { name: "Node.js", level: 50 },
-    { name: "Express.js", level: 50 },
-    { name: "MongoDB", level: 50 },
-    { name: "Directus", level: 80 },
-    { name: "Docker", level: 50 },
-    { name: "Superset", level: 50 },
+    { name: "Next.js", level: 10 },
+    // { name: "Node.js", level: 50 },
+    // { name: "Express.js", level: 50 },
+    // { name: "MongoDB", level: 50 },
+    // { name: "Directus", level: 80 },
+    // { name: "Docker", level: 50 },
+    // { name: "Superset", level: 50 },
     { name: "Git & GitHub", level: 80 },
   ];
 
@@ -100,36 +100,34 @@ export default function Home() {
               <div className="pointer-events-none absolute -right-6 -top-6 hidden w-60 translate-y-2 scale-95 rounded-xl border border-zinc-200 bg-white p-4 text-sm opacity-0 shadow-xl ring-1 ring-black/5 transition-all duration-200 group-hover:block group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100 dark:border-zinc-800 dark:bg-zinc-900">
                 <p className="mb-2 text-xs uppercase tracking-wide text-zinc-500">Hi, I&apos;m</p>
                 <p className="text-base font-semibold">Robins Banda</p>
-                <p className="text-zinc-500">Web Developer</p>
+                <p className="text-zinc-500">Frontend | React Developer</p>
               </div>
             </div>
-            {/* Removed resume button as requested */}
-            <div className="mt-2" />
-          </div>
 
-          {/* Right: heading */}
-          <div className="order-1 space-y-5 md:order-2">
-            <h1 className="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-              I build web systems that simplify work and scale businesses
-            </h1>
-            <p className="max-w-prose text-lg text-zinc-600 dark:text-zinc-400">
-              Websites, tools and MVPs built for real world use
-            </p>
-            <div className="flex gap-3 pt-2">
-              <a
-                href="#projects"
-                className="inline-flex items-center justify-center rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white shadow hover:bg-zinc-800 active:translate-y-px dark:bg-zinc-100 dark:text-black dark:hover:bg-zinc-200"
-              >
-                View Projects
-              </a>
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-medium shadow-sm hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-900"
-              >
-                Contact Me
-              </a>
+
+            {/* Right: heading */}
+            <div className="order-1 space-y-5 md:order-2">
+              <h1 className="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl">
+                I build front-end experiences that make websites intuitive, fast, and visually consistent.
+              </h1>
+              <p className="max-w-prose text-lg text-zinc-600 dark:text-zinc-400">
+                Turning design into seamless user interactions.
+              </p>
+              <div className="flex gap-3 pt-2">
+                <a
+                  href="#projects"
+                  className="inline-flex items-center justify-center rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white shadow hover:bg-zinc-800 active:translate-y-px dark:bg-zinc-100 dark:text-black dark:hover:bg-zinc-200"
+                >
+                  View Projects
+                </a>
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-medium shadow-sm hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-900"
+                >
+                  Contact Me
+                </a>
+              </div>
             </div>
-          </div>
         </section>
 
         {/* PROJECTS */}
@@ -221,7 +219,7 @@ export default function Home() {
                       href="tel:+260968112350"
                     >
                       {PhoneIcon}
-                      <span>+260 968112350</span>
+                      <span>+260 774654642pan>
                     </a>
                   </li>
                   <li>
@@ -294,7 +292,8 @@ export default function Home() {
         </section>
       </main>
 
-      <script dangerouslySetInnerHTML={{__html: `
+      <script dangerouslySetInnerHTML={{
+        __html: `
         (() => {
           const links = Array.from(document.querySelectorAll('a.nav-link'));
           const sections = links.map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
@@ -330,7 +329,7 @@ export default function Home() {
   );
 }
 
-{/* Utility SVG badge for skills */}
+{/* Utility SVG badge for skills */ }
 const SkillBadge = ({ abbr }: { abbr: string }) => (
   <svg viewBox="0 0 24 24" className="h-5 w-5 text-zinc-700 dark:text-zinc-300" aria-hidden>
     <circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.1" />
