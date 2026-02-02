@@ -103,31 +103,31 @@ export default function Home() {
                 <p className="text-zinc-500">Frontend | React Developer</p>
               </div>
             </div>
+          </div>
 
-
-            {/* Right: heading */}
-            <div className="order-1 space-y-5 md:order-2">
-              <h1 className="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-                I build front-end experiences that make websites intuitive, fast, and visually consistent.
-              </h1>
-              <p className="max-w-prose text-lg text-zinc-600 dark:text-zinc-400">
-                Turning design into seamless user interactions.
-              </p>
-              <div className="flex gap-3 pt-2">
-                <a
-                  href="#projects"
-                  className="inline-flex items-center justify-center rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white shadow hover:bg-zinc-800 active:translate-y-px dark:bg-zinc-100 dark:text-black dark:hover:bg-zinc-200"
-                >
-                  View Projects
-                </a>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-medium shadow-sm hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-900"
-                >
-                  Contact Me
-                </a>
-              </div>
+          {/* Right: heading */}
+          <div className="order-1 space-y-5 md:order-2">
+            <h1 className="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl">
+              I build front-end experiences that make websites intuitive, fast, and visually consistent.
+            </h1>
+            <p className="max-w-prose text-lg text-zinc-600 dark:text-zinc-400">
+              Turning design into seamless user interactions.
+            </p>
+            <div className="flex gap-3 pt-2">
+              <a
+                href="#projects"
+                className="inline-flex items-center justify-center rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white shadow hover:bg-zinc-800 active:translate-y-px dark:bg-zinc-100 dark:text-black dark:hover:bg-zinc-200"
+              >
+                View Projects
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-medium shadow-sm hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-900"
+              >
+                Contact Me
+              </a>
             </div>
+          </div>
         </section>
 
         {/* PROJECTS */}
@@ -219,7 +219,7 @@ export default function Home() {
                       href="tel:+260968112350"
                     >
                       {PhoneIcon}
-                      <span>+260 774654642pan>
+                      <span>+260 774654642</span>
                     </a>
                   </li>
                   <li>
@@ -329,7 +329,7 @@ export default function Home() {
   );
 }
 
-{/* Utility SVG badge for skills */ }
+/* Utility SVG badge for skills */
 const SkillBadge = ({ abbr }: { abbr: string }) => (
   <svg viewBox="0 0 24 24" className="h-5 w-5 text-zinc-700 dark:text-zinc-300" aria-hidden>
     <circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.1" />
